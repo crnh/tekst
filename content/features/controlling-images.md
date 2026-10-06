@@ -43,8 +43,6 @@ I understand everyone could want a different scale for small images, you can ove
 }
 ```
 
-[Here](https://tomfran.github.io/posts/hugo-images/) you can find a blog post showing different tags combinations.
-
 ## Adding new Image Tags
 
 All tags are assumed to be related to an image class, which applies styling for the figure environment.
