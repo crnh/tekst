@@ -1,0 +1,26 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "tekst-docs",
+	"compatibility_date": "2026-10-01",
+	"build": {
+		"command": "hugo --gc --minify"
+	},
+	"assets": {
+		// The path to the directory containing the `index.html` file to be served at `/`
+		"directory": "./public"
+	},
+	"route": {
+		"pattern": "tekst.haasj.es",
+		"custom_domain": true,
+		"enabled": true,
+		"previews_enabled": true
+	},
+	"observability": {
+		"enabled": false
+	},
+	"upload_source_maps": true
+}

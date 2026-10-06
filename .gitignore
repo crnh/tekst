@@ -114,3 +114,6 @@ $RECYCLE.BIN/
 *.lnk
 
 .idea/
+
+# Cloudflare Wrangler
+.wrangler/

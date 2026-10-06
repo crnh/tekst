@@ -1,9 +1,9 @@
-name = 'Tekst'
-license = 'MIT'
-licenselink = 'https://github.com/crnh/tekst/blob/main/LICENSE'
-description = 'A simple Hugo theme'
+name = "Tekst"
+license = "MIT"
+licenselink = "https://github.com/crnh/tekst/blob/main/LICENSE"
+description = "A simple Hugo theme"
 
-homepage = 'https://github.com/crnh/tekst'
+homepage = "https://github.com/crnh/tekst"
 
 tags = [
   "responsive",
@@ -30,4 +30,4 @@ features = [
 ]
 
 [author]
-name = 'Corné Haasjes'
+name = "Corné Haasjes"

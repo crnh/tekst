@@ -2,10 +2,12 @@
   "name": "tekst",
   "displayName": "Tekst",
   "scripts": {
-    "format": "prettier --write **/*.{js,css,yaml,toml} && gotmplfmt -w layouts"
+    "format": "prettier --write **/*.{js,css,yaml,toml} && gotmplfmt -w layouts",
+    "dev": "wrangler dev"
   },
   "devDependencies": {
-    "prettier": "^3.8.3",
-    "prettier-plugin-toml": "^2.0.6"
+    "prettier": "^3.9.9",
+    "prettier-plugin-toml": "^3.0.2",
+    "wrangler": "^4.147.0"
   }
 }

@@ -1,7 +1,7 @@
-baseURL = 'https://tekst.haasj.es/'
-locale = 'en-us'
-defaultContentLanguage = 'en-us'
-title = 'Tekst'
+baseURL = "https://tekst.haasj.es/"
+locale = "en-us"
+defaultContentLanguage = "en-us"
+title = "Tekst"
 
 [module]
 [module.hugoVersion]
@@ -27,16 +27,11 @@ publications = { page = "scholarly-article", section = "collection-page" }
 
 [menus]
 [[menus.main]]
-name = "home"
-pageRef = "/"
-weight = 10
-
-[[menus.main]]
 name = "setup"
 pageRef = "/setup"
-weight = 20
+weight = 10
 
 [[menus.main]]
 name = "features"
 pageRef = "/features"
-weight = 30
+weight = 20

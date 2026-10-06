@@ -11,3 +11,5 @@ It is based on the [Typo](https://github.com/tomfran/typo) theme, with additiona
 
 This documentation website serves as a demo for the theme, and also provides instructions on how to use it.
 Learn here how to [get started]({{< relref "setup" >}}) with the theme, and what [features]({{< relref "features" >}}) are available.
+
+{{< callout "Work in Progress" >}} The documentation of Tekst-specific features is still a work in progress. {{< /callout >}}
