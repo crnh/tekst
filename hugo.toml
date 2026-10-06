@@ -1,7 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://tekst.haasj.es/'
 locale = 'en-us'
 defaultContentLanguage = 'en-us'
-title = 'tekst'
+title = 'Tekst'
 
 [module]
 [module.hugoVersion]
@@ -13,6 +13,9 @@ min = "0.160.0"
 [markup.highlight]
 noClasses = false
 
+[params]
+paginationSize = 100
+
 [params.breadcrumbs]
 enabled = true
 showCurrentPage = true
@@ -21,3 +24,19 @@ home = "Home"
 [params.json-ld]
 posts = { page = "blog-posting", section = "collection-page" }
 publications = { page = "scholarly-article", section = "collection-page" }
+
+[menus]
+[[menus.main]]
+name = "home"
+pageRef = "/"
+weight = 10
+
+[[menus.main]]
+name = "setup"
+pageRef = "/setup"
+weight = 20
+
+[[menus.main]]
+name = "features"
+pageRef = "/features"
+weight = 30
