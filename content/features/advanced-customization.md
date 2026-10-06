@@ -13,19 +13,17 @@ hideBackToTop: true
 
 ## Custom CSS
 
-The theme supports custom css, you can override anything you want by redefining classes in the `assets/css/custom.css` file.
+Tekst has a modular CSS architecture and uses Hugo Pipes to compile the CSS files.
+All CSS files are located in the `assets/css` directory.
+Simple custom CSS can be added in `assets/css/custom.css`, which is included in the final CSS bundle.
+For more advanced customization, you can override the default CSS files by creating a file with the same name in the `assets/css` directory.
+This should generally not be necessary, but can be useful if you for instance want to change the default fonts.
 
-For instance, changing the main width can be done as follows: 
+## Typography
 
-```css
-:root {
-    --main-width: 1024px; /* overrides default of 780px */
-}
-```
-
-Note that backward incompatible changes in the CSS will likely not happen, but there might be cases in the future where 
-backward compatibility is not possible. If you are overriding a huge amount of CSS I suggest you forking the project instead of 
-defining it here.
+Tekst bundles the [Inter](https://rsms.me/inter/) font in `assets/fonts`.
+Other fonts can be used by putting them in the `assets/fonts` directory and overriding the `assets/css/fonts.css` file.
+Fonts in the `assets/fonts` directory are automatically preloaded by the theme.
 
 ## Hooks
 
@@ -39,10 +37,4 @@ The following hooks are currently available:
 - `footer_start` is inserted at the beginning of the footer.
 
 To create a hook, add a file named `<hook_name>.html` in the `layouts/partials/hooks` directory. The file should contain the code you want to inject at that point in the layout.
-For example, to preload a font, you can create a file named `head_start.html` in the `layouts/partials/hooks` directory with the following content:
-
-```html
-<link rel="preload" href="/fonts/Literata/Literata-Light.woff2" type="font/woff2" as="font" crossorigin>
-```
-
 The full context is passed to the hook, so any variables available in the page context can be used in the hook.

@@ -10,62 +10,64 @@ math: false
 showTags: false
 ---
 
-Typo has a built-in dark and light mode, you can decide the default one and control images on both modes.
+Tekst supports a dark and light mode.
+By default, both are enabled and the mode is automatically chosen based on the user's system preferences.
+A theme toggle in the header allows the user to switch between modes.
 
-## Choosing a Theme
+## Choosing a theme
 
-By default the mode in use is auto, if you want, you can hard-code a color scheme.
+By default the mode in use is `auto`, but the color scheme can be forced to either `light` or `dark`:
 
 ```toml
 [params]
 theme = 'auto | light | dark'
 ```
 
-## Choosing a Color Palette
+## Choosing a color palette
 
-Typo has the possibility to specify the color palette to use in the theme. The default one is black and white, 
-but they can easily be added. 
-
-The color palettes are stored under `assets/css/colors/*` and the one in use can be specified with the following 
-parameter: 
+Tekst contains a set of color palettes that can be used to change the appearance of the theme.
+By default, the color palette is black and white.
+The color palette can be changed with the `colorPalette` parameter:
 
 ```toml
 [params]
 colorPalette = 'default'
 ```
 
-Note that omitting the parameter implies using the default palette.
+These palettes are currently available:
 
-This is the complete list of palettes available: 
-- default;
-- catpuccin;
-- gruvebox;
-- eink;
-- base16-default;
-- base16-eighties;
-- base16-ocean;
-- base16-mocha;
-- base16-cupcake.
+- default
+- catpuccin
+- gruvebox
+- eink
+- base16-default
+- base16-eighties
+- base16-ocean
+- base16-mocha
+- base16-cupcake
 
-More are to come. 
+## Adding a custom color palette
 
-## Adding a Custom Color Palette
+Palettes are defined using YAML files in `data/themes`.
+New palettes can be added by creating a new file in that directory, and defining the required parameters.
 
-You can add a custom color palette by creating a new file under `assets/css/colors/*` named after your wanted palette name. 
-Use another one as base and define the required parameters.
+## Hide the website title or header
 
-You can then use your new palette, by using its file name in the `colorPalette` site param.
+The website title can be hidden by setting the `hideTitle` parameter to `true`:
 
-## Hide Header Mode
+```toml
+[params]
+hideTitle = true
+```
 
-You can choose to hide the header on every page apart from the homepage with this parameter.
+Furthermore, the header can be hidden on all non-home pages by setting the `hideHeader` parameter to `true`:
 
 ```toml
 [params]
 hideHeader = true
 ```
 
-I strongly recommend enabling breadcrumbs if you do so.
+It is recommended to enable breadcrumbs if you do so.
 
 ## Code Blocks
 
@@ -101,7 +103,7 @@ I suggest trying [color schemes](https://xyproto.github.io/splash/docs/all.html)
 
 **Line Numbers**
 
-If you want to enable line numbers, use the following, `lineNumbersInTable` is expecially important. 
+If you want to enable line numbers, use the following, `lineNumbersInTable` is especially important. 
 
 ```toml
 [markup]
@@ -112,8 +114,9 @@ lineNumbersInTable = false
 
 ## Footer Customization
 
-One can decide to hide the footer completely or to change it's content by specifying the following parameters.
-Note that if you don't include the following parameters (or leave footerContent empty) the default footer is shown.
+The footer can be hidden by changing the `showFooter` parameter to `false`.
+The footer content can be specified through the `footerContent` parameter, which supports Markdown.
+If the footer is not hidden and the content is not specified, the default footer is shown.
 
 ```toml
 [params]
