@@ -49,9 +49,7 @@ These methods are not documented here.
 
 ## Sample Config
 
-Use those to get started with the theme. You can find a complete overview of the available features [here](https://tomfran.github.io/typo-wiki/features/).
-
-[Here](https://github.com/tomfran/tomfran.github.io) you can find a repo using this theme.
+Use those to get started with the theme. You can find a complete overview of the available features [here]({{< relref "/features" >}}).
 
 ### Site Config
 
