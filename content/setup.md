@@ -46,7 +46,7 @@ When building the site, Hugo will automatically download the theme.
 Instead of using the theme as a Hugo module, you can also install it as a Git submodule, clone it directly, or download a release and unzip it into the `/themes` directory.
 These methods are not documented here.
 
-## Updating the theme
+### Updating the theme
 
 If the theme is installed as a Hugo module, you can update it by running the following command:
 
