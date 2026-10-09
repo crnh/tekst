@@ -3,5 +3,5 @@
 {{- $noop := .WordCount -}}
 
 {{ if or (.Page.Store.Get "hasMath") .IsNode }}
-  <link rel="stylesheet" href="{{ $katex.RelPermalink }}" integrity="{{ $katex.Data.Integrity }}" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ $katex.RelPermalink }}" integrity="{{ $katex.Data.Integrity }}" crossorigin="anonymous">
 {{ end }}

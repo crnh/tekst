@@ -81,7 +81,15 @@ Both inline ($a^2 + b^2 = c^2$) and block
 $$\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$$
 
 math are supported.
-To enable this, add the following to your `hugo.toml`:
+To enable this, you must allow importing this theme's markup configuration in `hugo.toml`:
+
+```toml
+[markup]
+_merge = 'deep'
+```
+
+{{< dropdown "Alternative configuration to put in your `hugo.toml`" >}}
+If you do not want to merge the theme's markup configuration, you can add the following to your `hugo.toml`:
 
 ```toml
 [markup.goldmark]
@@ -92,6 +100,7 @@ enable = true
 block = [['\[', '\]'], ['$$', '$$']]
 inline = [['\(', '\)'], ['$', '$']]
 ```
+{{< /dropdown >}}
 
 When math is present on a page, KaTeX's stylesheet is automatically included in the head of the page.
 Math rendering can be disabled globally by setting the following parameter in your `hugo.toml`:
