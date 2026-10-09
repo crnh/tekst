@@ -59,7 +59,7 @@
 {{ partial "json-ld" . }}
 
 {{/* Math */}}
-{{ if not (eq (.Param "math" | default true) false) }}
+{{ if (.Param "math" | default true) }}
 	{{ partial "head/math.html" . }}
 {{ end }}
 
