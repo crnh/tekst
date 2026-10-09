@@ -1,4 +1,5 @@
 {{/* Header */}}
+{{ $theme := .Param "theme" | default "auto" }}
 
 <div class="header">
 	{{ if or (not (.Param "hideHeader")) .IsHome }}
@@ -33,7 +34,9 @@
 						</p>
 					{{ end }}
 				{{ end }}
-				{{ partial "components/theme-switch.html" }}
+				{{ if eq $theme "auto" }}
+					{{ partial "components/theme-switch.html" }}
+				{{ end }}
 			</nav>
 		{{ end }}
 

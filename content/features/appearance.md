@@ -23,6 +23,8 @@ By default the mode in use is `auto`, but the color scheme can be forced to eith
 theme = 'auto | light | dark'
 ```
 
+Setting the theme to `light` or `dark` will disable the theme toggle in the header.
+
 ## Choosing a color palette
 
 Tekst contains a set of color palettes that can be used to change the appearance of the theme.
