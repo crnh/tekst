@@ -12,7 +12,7 @@ showTags: false
 
 Miscellaneous settings.
 
-## Home Meta Description
+## Home meta description
 
 You can specify the homepage meta description with the following parameter:
 
@@ -20,6 +20,21 @@ You can specify the homepage meta description with the following parameter:
 [params]
 description = "Your description"
 ```
+
+## `json-ld` structured data
+
+Tekst automatically generates `json-ld` structured data for some page types.
+Templates for several page types are included in `layouts/_partials/json-ld`.
+These templates are mapped to page types in `hugo.toml`:
+
+```toml
+[params.json-ld]
+posts = { page = "blog-posting", section = "collection-page" }
+publications = { page = "scholarly-article", section = "collection-page" }
+```
+
+The above configuration maps the `posts` collection to the `blog-posting` page type, and the `publications` collection to the `scholarly-article` page type.
+Section pages for both collections are mapped to the `collection-page` type.
 
 ## Breadcrumbs
 
@@ -77,25 +92,18 @@ jsLocation = "http://example.org/umami.js"
 
 ## Favicons
 
-The following favicons are included in the head of the website: 
+The following favicons are included in the head of the website:
+
 - `favicon.ico`
 - `favicon-16x16.png`
 - `favicon-32x32.png`
+- `favicon-96x96.png`
 - `android-chrome-192x192.png`
 - `apple-touch-icon.png`
+- `site.webmanifest`
 
-You must override the existing one in your static folder. 
-
-You can also specify a subdirectory of /static if you prefer 
-using the following param: 
-
-```toml
-[params]
-faviconPath = 'your-path'
-```
-
-You can easily generate favicons using [this website](https://realfavicongenerator.net/) starting from your image.
-[Here](https://github.com/tomfran/tomfran.github.io/tree/main/static) you can see an example of icons overriding default ones.
+Favicons must be stored in `assets/favicons`.
+All supported favicon files in this folder are automatically included in the head of the website.
 
 ## OpenGraph
 
@@ -128,7 +136,7 @@ If you want more control, you can create your own `layouts/partials/head/og-imag
 
 Overriding `og-image.html` will still respect frontmatter/Hugo processing config and only applies if those scenarios fail.
 
-## Mermaid Diagrams
+## Mermaid diagrams
 
 Mermaid diagrams are supported, you can set light and dark themes in your config and they switch with your blog's light/dark state. Below are the default values:
 

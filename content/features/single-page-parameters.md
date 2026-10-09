@@ -22,7 +22,7 @@ author: "Francesco"
 authorAvatarPath: "/avatar.jpeg"
 ```
 
-## Table of Contents
+## Table of contents
 
 Show a table of contents at the beginning of the post.
 
@@ -30,7 +30,7 @@ Show a table of contents at the beginning of the post.
 toc: true
 ```
 
-## Sections Auto-numbering
+## Sections auto-numbering
 
 Auto-number headings.
 
@@ -40,7 +40,7 @@ autonumber: true
 
 Note that headings should start from level two.
 
-## Math Rendering
+## Math rendering
 
 Enable math rendering.
 
@@ -72,7 +72,7 @@ tags: ["database", "java"]
 showTags: false
 ```
 
-## Display Read Time
+## Display read time
 
 Choose to display reading time.
 
@@ -80,7 +80,7 @@ Choose to display reading time.
 readTime: true
 ```
 
-## Hide Back to Top
+## Hide back to top
 
 Choose to display back to top at the end of the page.
 
@@ -88,7 +88,7 @@ Choose to display back to top at the end of the page.
 hideBackToTop: true
 ```
 
-## Hide Pagination Controls
+## Hide pagination controls
 
 Choose to display pagination controls at the end of the page.
 
@@ -96,7 +96,7 @@ Choose to display pagination controls at the end of the page.
 hidePagination: true
 ```
 
-## Meta Description
+## Meta description
 
 You can specify the post meta description as follows: 
 
@@ -112,7 +112,7 @@ You can include a [fediverse handle](https://blog.joinmastodon.org/2024/07/highl
 fediverse: "@username@instance.url"
 ```
 
-## Date Format
+## Date format
 
 You can decide the date format to apply to single posts by setting the following param in the toml file: 
 

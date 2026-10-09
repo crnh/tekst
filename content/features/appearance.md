@@ -71,7 +71,7 @@ hideHeader = true
 
 It is recommended to enable breadcrumbs if you do so.
 
-## Code Blocks
+## Code blocks
 
 **Syntax Highlighting**
 
@@ -114,7 +114,7 @@ lineNos = true
 lineNumbersInTable = false
 ```
 
-## Footer Customization
+## Footer customization
 
 The footer can be hidden by changing the `showFooter` parameter to `false`.
 The footer content can be specified through the `footerContent` parameter, which supports Markdown.

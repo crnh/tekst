@@ -40,9 +40,12 @@ This is also configured through the frontmatter parameters:
 collection:
   name: posts
   title: Posts
+  entry: post  # Optional list item type, defaults to "post"
 ```
 
 The above example includes the `/posts` collection. Note that you can omit the title if you prefer.
+The `entry` parameter is optional and allows you to specify an entry partial template to use for the list items. 
+These partials are located in `layouts/_partials/entries` and can be added or customized to your liking.
 
 ## Example home page
 

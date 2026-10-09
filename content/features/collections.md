@@ -21,7 +21,7 @@ Specify the maximum number of posts per page.
 paginationSize = 100
 ```
 
-## Date Format
+## Date format
 
 The date format can be tweaked with a format string.
 
@@ -30,7 +30,7 @@ The date format can be tweaked with a format string.
 listDateFormat = '2 Jan 2006'
 ```
 
-## Summary Toggle
+## Summaries
 
 Summaries can be turned on and off with this setting.
 
@@ -39,7 +39,7 @@ Summaries can be turned on and off with this setting.
 listSummaries = true
 ```
 
-## Hide List Date
+## Hide list date
 
 To hide the dates on the list page, add the following to the frontmatter of the collection's `_index.md`:
 

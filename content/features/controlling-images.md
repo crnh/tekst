@@ -10,7 +10,7 @@ math: false
 showTags: false
 ---
 
-## Dark and Light Mode Images
+## Dark and light mode images
 
 Sometimes images don't look good in both light and dark mode. You can annotate the import path with a special tag to ensure an image is only shown on a specific color scheme.
 
@@ -23,7 +23,7 @@ In the above example, the light image is a transparent background with dark line
 
 If you omit the `#dark` or `#light` tags an image is always shown.
 
-## Images Sizing
+## Images sizing
 
 There exist two tags to control sizing:
 - `#small`: the image takes 80% of the original scale.
@@ -43,7 +43,7 @@ I understand everyone could want a different scale for small images, you can ove
 }
 ```
 
-## Adding new Image Tags
+## Adding new image tags
 
 All tags are assumed to be related to an image class, which applies styling for the figure environment.
 
