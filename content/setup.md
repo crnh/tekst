@@ -3,7 +3,7 @@ title: "Setup"
 date: "2024-10-12"
 summary: "How to setup a Hugo's website using Tekst as a theme."
 description: "Getting started with Tekst theme"
-toc: false
+toc: true
 readTime: false
 autonumber: true
 showTags: false

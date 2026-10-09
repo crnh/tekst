@@ -4,7 +4,7 @@ showListDate: false
 
 cascade:
   params:
-    toc: false
+    toc: true
     readTime: false
     autonumber: true
     showTags: false
