@@ -3,11 +3,6 @@ title: "Homepage"
 date: "2024-10-14"
 summary: "Homepage parameters"
 description: "Homepage parameters"
-toc: false
-readTime: false
-autonumber: true
-math: false
-showTags: false
 ---
 
 The homepage is located in `content/_index.md` and can be customized using this file's frontmatter parameters.

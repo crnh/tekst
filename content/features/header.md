@@ -3,11 +3,6 @@ title: "Header"
 date: "2024-10-13"
 summary: "Header menu"
 description: "Header menu"
-toc: false
-readTime: false
-autonumber: true
-math: false
-showTags: false
 ---
 
 The header contains the site's main menu.

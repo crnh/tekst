@@ -3,11 +3,6 @@ title: "Advanced Customization"
 date: "2024-10-07"
 summary: "Advanced customization options"
 description: "Advanced customization options"
-toc: false
-readTime: false
-autonumber: true
-math: false
-showTags: false
 hideBackToTop: true
 ---
 

@@ -35,10 +35,6 @@
 		<footer>
 			{{ partial "footer.html" . }}
 		</footer>
-
-		{{ if .Param "math" }}
-			{{ partialCached "math.html" . }}
-		{{ end }}
 	</body>
 
 	{{ with resources.Get "js/copy-code.ts" | js.Build (dict "minify" true) | fingerprint }}

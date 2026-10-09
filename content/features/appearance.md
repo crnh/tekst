@@ -3,11 +3,6 @@ title: "Appearance"
 date: "2024-10-12"
 summary: "Appearance parameters"
 description: "Appearance parameters"
-toc: false
-readTime: false
-autonumber: true
-math: false
-showTags: false
 ---
 
 Tekst supports a dark and light mode.

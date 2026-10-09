@@ -3,11 +3,6 @@ title: "Single Page Parameters"
 date: "2024-10-09"
 summary: "Single Page Parameters parameters"
 description: "Single Page Parameters parameters"
-toc: false
-readTime: false
-autonumber: true
-math: false
-showTags: false
 ---
 
 The following parameters apply to single pages, they are meant to be inserted in the `.md` files introductions, apart from the date format.
@@ -39,29 +34,6 @@ autonumber: true
 ```
 
 Note that headings should start from level two.
-
-## Math rendering
-
-Enable math rendering.
-
-```md
-math: true
-```
-
-You may encounter issues rendering complex equations.
-This is due to a [known issue](https://discourse.gohugo.io/t/one-of-several-latex-equations-is-not-rendered-by-katex/47790). 
-
-A possible workaround is to wrap your equation in `rawhtml` tags: 
-
-```
-<rawhtml>
-$$
-...
-$$
-</rawhtml>
-```
-
-> You must wrap the rawhtml tag in {{ ... }}, omitted due to rendering constraints.
 
 ## Tags
 

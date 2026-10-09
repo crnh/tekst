@@ -3,11 +3,6 @@ title: "Other Parameters"
 date: "2024-10-08"
 summary: "Other Parameters parameters"
 description: "Other Parameters parameters"
-toc: false
-readTime: false
-autonumber: true
-math: false
-showTags: false
 ---
 
 Miscellaneous settings.
@@ -78,6 +73,33 @@ You can decide to hide the comments section on certain pages, using the followin
 disableComment: true
 ```
 
+## Math rendering
+
+Math is rendered during the build process using [KaTeX](https://katex.org/).
+Both inline ($a^2 + b^2 = c^2$) and block 
+
+$$\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$$
+
+math are supported.
+To enable this, add the following to your `hugo.toml`:
+
+```toml
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$']]
+```
+
+When math is present on a page, KaTeX's stylesheet is automatically included in the head of the page.
+Math rendering can be disabled globally by setting the following parameter in your `hugo.toml`:
+
+```toml
+[params]
+math = false
+```
 
 ## Umami
 

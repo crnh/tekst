@@ -58,5 +58,10 @@
 {{/* JSON-LD structured data */}}
 {{ partial "json-ld" . }}
 
+{{/* Math */}}
+{{ if not (eq (.Param "math" | default true) false) }}
+	{{ partial "head/math.html" . }}
+{{ end }}
+
 {{/* Head end hook */}}
 {{ partial "functions/get_hook.html" (dict "hook" "head_end" "context" .) }}

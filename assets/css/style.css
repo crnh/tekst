@@ -260,7 +260,7 @@ p code {
 
 /* Latex */
 
-.katex-display {
+/* .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
   -ms-overflow-style: none;
@@ -269,7 +269,7 @@ p code {
 
 .katex-display::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* Footnotes */
 

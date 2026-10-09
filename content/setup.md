@@ -6,7 +6,6 @@ description: "Getting started with Tekst theme"
 toc: false
 readTime: false
 autonumber: true
-math: false
 showTags: false
 hidePagination: true
 ---

@@ -3,11 +3,6 @@ title: "Controlling Images"
 date: "2024-10-11"
 summary: "Controlling Images parameters"
 description: "Controlling Images parameters"
-toc: false
-readTime: false
-autonumber: true
-math: false
-showTags: false
 ---
 
 ## Dark and light mode images

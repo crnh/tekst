@@ -3,11 +3,6 @@ title: "Collections"
 date: "2024-10-10"
 summary: "Collections parameters"
 description: "Collections parameters"
-toc: false
-readTime: false
-autonumber: true
-math: false
-showTags: false
 ---
 
 Here are some parameters regarding collections, those apply to both the home displayed one and to the dedicated folder pages.
