@@ -46,6 +46,22 @@ When building the site, Hugo will automatically download the theme.
 Instead of using the theme as a Hugo module, you can also install it as a Git submodule, clone it directly, or download a release and unzip it into the `/themes` directory.
 These methods are not documented here.
 
+## Updating the theme
+
+If the theme is installed as a Hugo module, you can update it by running the following command:
+
+```bash
+hugo mod get -u github.com/crnh/tekst
+```
+
+or simply run
+
+```bash
+hugo mod get -u
+```
+
+to update all modules.
+
 ## Sample Config
 
 Use those to get started with the theme. You can find a complete overview of the available features [here]({{< relref "/features" >}}).
