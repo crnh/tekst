@@ -10,6 +10,10 @@ showTags: false
 hidePagination: true
 ---
 
+## Requirements
+
+Tekst requires Hugo Extended v0.160.0 or later.
+
 ## Installation
 
 Below are the ways to get started with the Tekst theme.
@@ -130,6 +134,8 @@ weight = 30
 
 # Syntax highlight on code blocks
 [markup]
+_merge = 'deep'
+
 [markup.highlight]
 noClasses = false
 

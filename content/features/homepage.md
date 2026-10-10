@@ -1,6 +1,6 @@
 ---
 title: "Homepage"
-date: "2024-10-14"
+weight: 30
 summary: "Homepage parameters"
 description: "Homepage parameters"
 ---

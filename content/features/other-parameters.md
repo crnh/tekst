@@ -1,6 +1,6 @@
 ---
 title: "Other Parameters"
-date: "2024-10-08"
+weight: 90
 summary: "Other Parameters parameters"
 description: "Other Parameters parameters"
 ---
@@ -30,6 +30,8 @@ publications = { page = "scholarly-article", section = "collection-page" }
 
 The above configuration maps the `posts` collection to the `blog-posting` page type, and the `publications` collection to the `scholarly-article` page type.
 Section pages for both collections are mapped to the `collection-page` type.
+
+See [content types]({{< relref "content-types.md" >}}) for more on collections.
 
 ## Breadcrumbs
 

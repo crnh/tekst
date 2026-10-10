@@ -1,6 +1,6 @@
 ---
 title: "Single Page Parameters"
-date: "2024-10-09"
+weight: 80
 summary: "Single Page Parameters parameters"
 description: "Single Page Parameters parameters"
 ---
@@ -15,6 +15,25 @@ using an image from /static:
 ```md
 author: "Francesco"
 authorAvatarPath: "/avatar.jpeg"
+```
+
+## Page icon
+
+An icon can be shown before the page title.
+The icon is an SVG in the `assets/emoji` directory, referenced by file name without the extension.
+
+```md
+icon: "rocket"
+```
+
+This is the same mechanism as the [`emoji`]({{< relref "shortcodes.md#emoji" >}}) shortcode.
+
+## Summary
+
+A short summary can be shown under the title.
+
+```md
+summary: "A short introduction to the page"
 ```
 
 ## Table of contents
@@ -82,6 +101,15 @@ You can include a [fediverse handle](https://blog.joinmastodon.org/2024/07/highl
 
 ```md
 fediverse: "@username@instance.url"
+```
+
+## Extra scripts
+
+Page-specific scripts can be added with the `extraScripts` parameter.
+Each entry is a path to a script in the `assets` directory, and is bundled with Hugo Pipes before being included in the page footer.
+
+```md
+extraScripts: ["js/plot.ts"]
 ```
 
 ## Date format

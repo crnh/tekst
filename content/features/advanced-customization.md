@@ -1,6 +1,6 @@
 ---
 title: "Advanced Customization"
-date: "2024-10-07"
+weight: 100
 summary: "Advanced customization options"
 description: "Advanced customization options"
 hideBackToTop: true
@@ -33,3 +33,20 @@ The following hooks are currently available:
 
 To create a hook, add a file named `<hook_name>.html` in the `layouts/partials/hooks` directory. The file should contain the code you want to inject at that point in the layout.
 The full context is passed to the hook, so any variables available in the page context can be used in the hook.
+
+## Partial templates
+
+The theme's partials are organized by purpose in `layouts/_partials`:
+
+- `components/` contains reusable pieces such as the theme switch, tags and table of contents.
+- `entries/` contains the list item templates for each [content type]({{< relref "content-types.md" >}}).
+- `head/` contains the partials included in the `<head>`, such as CSS, JS, math and OpenGraph images.
+- `json-ld/` contains the structured data templates.
+- `badges.html` renders the publication badges.
+
+Any of these can be overridden by a file with the same name in your site, following Hugo's [template lookup order](https://gohugo.io/templates/lookup-order/).
+
+## Page-specific scripts
+
+Page-specific scripts can be added with the [`extraScripts`]({{< relref "single-page-parameters.md#extra-scripts" >}}) page parameter.
+Each entry is bundled with Hugo Pipes, so the assets can be written in TypeScript.

@@ -1,6 +1,6 @@
 ---
 title: "Collections"
-date: "2024-10-10"
+weight: 70
 summary: "Collections parameters"
 description: "Collections parameters"
 ---
@@ -42,3 +42,8 @@ To hide the dates on the list page, add the following to the frontmatter of the 
 [params]
 showListDate = false
 ```
+
+## Content types
+
+List pages render their items with a partial from `layouts/_partials/entries`, and the tags taxonomy has its own list page.
+See [content types]({{< relref "content-types.md" >}}) for details.
