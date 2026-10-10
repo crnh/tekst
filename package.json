@@ -3,11 +3,21 @@
   "displayName": "Tekst",
   "scripts": {
     "format": "prettier --write **/*.{js,css,yaml,toml} && gotmplfmt -w layouts",
-    "dev": "wrangler dev"
+    "dev": "wrangler dev",
+    "prepare": "simple-git-hooks"
   },
   "devDependencies": {
+    "lint-staged": "^17.6.0",
     "prettier": "^3.9.9",
     "prettier-plugin-toml": "^3.0.2",
+    "simple-git-hooks": "^2.14.0",
     "wrangler": "^4.147.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,css,md,json,toml,yaml}": "prettier --write",
+    "layouts/**/*.html": "gotmplfmt -w"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   }
 }

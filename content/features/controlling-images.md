@@ -1,8 +1,8 @@
 ---
-title: "Controlling Images"
+title: "Controlling images"
 weight: 60
-summary: "Controlling Images parameters"
-description: "Controlling Images parameters"
+summary: "Controlling images parameters"
+description: "Controlling images parameters"
 ---
 
 ## Dark and light mode images
@@ -21,10 +21,11 @@ If you omit the `#dark` or `#light` tags an image is always shown.
 ## Images sizing
 
 There exist two tags to control sizing:
+
 - `#small`: the image takes 80% of the original scale.
 - `#full`: the image takes up all the available screen width.
 
-You can also specify a caption using the following form: 
+You can also specify a caption using the following form:
 
 ```
 ![alt text](path.png#dark#small "Caption text")
@@ -34,7 +35,7 @@ I understand everyone could want a different scale for small images, you can ove
 
 ```css
 .img-small img {
- scale: 80%;
+  scale: 80%;
 }
 ```
 

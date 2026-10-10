@@ -3,6 +3,7 @@ title: "Header"
 weight: 40
 summary: "Header menu"
 description: "Header menu"
+toc: false
 ---
 
 The header contains the site's main menu.
@@ -14,5 +15,5 @@ To include pages in the header menu, you must add the following elements to your
 [[menus.main]]
 name = "home"  # Name of the menu item
 pageRef = "/"  # Reference to the page to link to
-weight = 10    # Optional weight to control the order of menu items
+weight = 10  # Optional weight to control the order of menu items
 ```

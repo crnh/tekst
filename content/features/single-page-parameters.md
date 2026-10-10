@@ -1,8 +1,8 @@
 ---
-title: "Single Page Parameters"
+title: "Single page parameters"
 weight: 80
-summary: "Single Page Parameters parameters"
-description: "Single Page Parameters parameters"
+summary: "Single page parameters"
+description: "Single page parameters"
 icon: "fxemoji:pagefacingup"
 ---
 
@@ -10,8 +10,8 @@ The following parameters apply to single pages, they are meant to be inserted in
 
 ## Author
 
-You can specify an author name to display and avatar path to use. Here is an example 
-using an image from /static: 
+You can specify an author name to display and avatar path to use. Here is an example
+using an image from /static:
 
 ```md
 author: "Francesco"
@@ -91,7 +91,7 @@ hidePagination: true
 
 ## Meta description
 
-You can specify the post meta description as follows: 
+You can specify the post meta description as follows:
 
 ```md
 description: "Your Description"
@@ -116,9 +116,9 @@ extraScripts: ["js/plot.ts"]
 
 ## Date format
 
-You can decide the date format to apply to single posts by setting the following param in the toml file: 
+You can decide the date format to apply to single posts by setting the following param in the toml file:
 
 ```toml
 [params]
-singleDateFormat = '2 January 2006'
+singleDateFormat = "2 January 2006"
 ```

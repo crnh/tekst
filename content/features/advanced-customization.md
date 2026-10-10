@@ -1,5 +1,5 @@
 ---
-title: "Advanced Customization"
+title: "Advanced customization"
 weight: 100
 summary: "Advanced customization options"
 description: "Advanced customization options"
