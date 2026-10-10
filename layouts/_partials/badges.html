@@ -1,0 +1,23 @@
+<div class="badges">
+	{{ with .Params.pdf }}
+		{{ partial "components/badge.html" (dict "title" "PDF" "href" .) }}
+	{{ end }}
+
+	{{ with .Params.doi }}
+		{{ partial "components/badge.html" (dict "title" . "href" (printf "https://doi.org/%s" .)) }}
+	{{ end }}
+
+	{{ with .Params.code }}
+		{{ partial "components/badge.html" (dict "title" "Code" "href" .) }}
+	{{ end }}
+
+	{{ with .Params.github }}
+		{{ partial "components/badge.html" (dict "title" "GitHub" "href" (printf "https://github.com/%s" .)) }}
+	{{ end }}
+
+	{{ with .Params.badges }}
+		{{ range . }}
+			{{ partial "components/badge.html" . }}
+		{{ end }}
+	{{ end }}
+</div>
