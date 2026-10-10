@@ -1,0 +1,21 @@
+{{- $parts := split . ":" -}}
+{{- $iconSet := index $parts 0 -}}
+{{- $iconName := index $parts 1 -}}
+
+{{- $iconData := index site.Data.icons $iconSet -}}
+{{- if not $iconData -}}
+	{{ errorf "Icon set '%s' not found" $iconSet }}
+{{- end -}}
+
+{{- $icon := index $iconData.icons $iconName -}}
+
+{{- if not $icon -}}
+	{{ errorf "Icon '%s' not found in icon set '%s'" $iconName $iconSet }}
+{{- end -}}
+
+{{- return (dict
+	"body" $icon.body
+	"width" ($icon.width | default $iconData.width)
+	"height" ($icon.height | default $iconData.height)
+	)
+-}}

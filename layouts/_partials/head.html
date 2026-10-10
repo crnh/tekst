@@ -14,7 +14,7 @@
 {{ end }}
 
 {{/* Head start hook */}}
-{{ partial "functions/get_hook.html" (dict "hook" "head_start" "context" .) }}
+{{ partial "functions/get-hook.html" (dict "hook" "head_start" "context" .) }}
 
 {{ partialCached "favicons.html" . }}
 
@@ -64,4 +64,4 @@
 {{ end }}
 
 {{/* Head end hook */}}
-{{ partial "functions/get_hook.html" (dict "hook" "head_end" "context" .) }}
+{{ partial "functions/get-hook.html" (dict "hook" "head_end" "context" .) }}

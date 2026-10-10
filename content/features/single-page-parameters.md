@@ -3,6 +3,7 @@ title: "Single Page Parameters"
 weight: 80
 summary: "Single Page Parameters parameters"
 description: "Single Page Parameters parameters"
+icon: "fxemoji:pagefacingup"
 ---
 
 The following parameters apply to single pages, they are meant to be inserted in the `.md` files introductions, apart from the date format.
@@ -20,13 +21,14 @@ authorAvatarPath: "/avatar.jpeg"
 ## Page icon
 
 An icon can be shown before the page title.
-The icon is an SVG in the `assets/emoji` directory, referenced by file name without the extension.
+Icons are retrieved from [Iconify](https://iconify.design/) datasets.
+This is the configuration used to show the `fxemoji:pagefacingup` icon before the title of this page:
 
 ```md
-icon: "rocket"
+icon: "fxemoji:pagefacingup"
 ```
 
-This is the same mechanism as the [`emoji`]({{< relref "shortcodes.md#emoji" >}}) shortcode.
+Refer to the [`icon`]({{< relref "shortcodes.md#icon" >}}) shortcode for more information on how to specify icons or include other icon sets.
 
 ## Summary
 

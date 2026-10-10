@@ -1,0 +1,7 @@
+{{- $icon := partial "functions/iconify-data" . -}}
+
+<span class="emoji" aria-hidden="true">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {{ $icon.width }} {{ $icon.height }}">
+		{{ $icon.body | safeHTML }}
+	</svg>
+</span>

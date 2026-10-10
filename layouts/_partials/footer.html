@@ -1,7 +1,7 @@
 {{ $showFooter := default true .Site.Params.showFooter }}
 {{ if $showFooter }}
 	{{/* Footer start hook */}}
-	{{ partial "functions/get_hook.html" (dict "hook" "footer_start" "context" .) }}
+	{{ partial "functions/get-hook.html" (dict "hook" "footer_start" "context" .) }}
 
 	{{ if not .Site.Params.footerContent }}
 		<p>Powered by

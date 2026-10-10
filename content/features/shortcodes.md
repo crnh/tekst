@@ -38,15 +38,18 @@ Hidden content, rendered as **Markdown**.
 Hidden content, rendered as **Markdown**.
 {{< /dropdown >}}
 
-## Emoji
+## Icon
 
-The `emoji` shortcode inserts an SVG from the `assets/emoji` directory, referenced by file name without the extension.
+The `icon` shortcode inserts an icon from an [Iconify](https://iconify.design/) collection.
+Icon names are specified as `<collection>:<icon>`, for example `fxemoji:rocket`.
+Icon sets are located in `data/icons`.
+The [`fxemoji`](https://icon-sets.iconify.design/fxemoji/) collection is bundled with the theme.
 
 ```md
-{{</* emoji "rocket" */>}}
+{{</* icon "fxemoji:rocket" */>}}
 ```
 
-{{< emoji "rocket" >}}
+{{< icon "fxemoji:rocket" >}}
 
 The same icons can be shown before a page title with the [`icon`]({{< relref "single-page-parameters.md#page-icon" >}}) page parameter.
 
